@@ -33,7 +33,7 @@ html{
 
 body {
     line-height:1;
-    background-image: url(./img/479430_l.jpg);
+    background-image: url(./479430_l.jpg);
     text-align: center;
 }
 
@@ -128,7 +128,7 @@ img {
   position: relative;
   /*height: 500px;*/
   height: calc(100vh - 60px);
-  background: url(./img/102818_l.jpg) center center no-repeat;
+  background: url(./102818_l.jpg) center center no-repeat;
   background-size: cover;
 }
 .header-title {
@@ -294,7 +294,7 @@ img {
 .heading {
   margin: 0 50px 20px 50px;
   padding: 30px 0;
-  background-image: url(./img/3527468_l.jpg);
+  background-image: url(./3527468_l.jpg);
   font-size: 50px;
   letter-spacing: 5px;
   color: white;
