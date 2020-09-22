@@ -33,7 +33,7 @@ html{
 
 body {
     line-height:1;
-    background-image: url(./479430_l.jpg);
+    background-image: url(/Users/y.sakota/Desktop/ポートフォリオ/img/479430_l.jpg);
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
-nav ul {
+ul {
     list-style:none;
 }
 
@@ -121,13 +121,14 @@ img {
   height: auto;
 }
 
+
 /*header
 --------------------*/
 .header {
   position: relative;
   /*height: 500px;*/
   height: calc(100vh - 60px);
-  background: url(./102818_l.jpg) center center no-repeat;
+  background: url(/Users/y.sakota/Desktop/ポートフォリオ/img/102818_l.jpg) center center no-repeat;
   background-size: cover;
 }
 .header-title {
@@ -189,7 +190,6 @@ img {
 
 /*footer*/
 .footer {
-  margin-top: 40px;
   background-color: black;
   color: white;
 }
@@ -201,7 +201,6 @@ img {
 }
 .footer-title {
   width: 50%;
-  box-sizing: border-box
 }
 .footer-logo {
   margin-bottom: 10px;
@@ -293,13 +292,12 @@ img {
 
 /*大見出しの設定*/
 .heading {
-  margin: 40px 200px;
+  margin: 0 50px 20px 50px;
   padding: 30px 0;
-  background-image: url(./434971_l.jpg);
-  background-size: cover;
-  border: 1px solid black;
+  background-image: url(/Users/y.sakota/Desktop/ポートフォリオ/img/3527468_l.jpg);
   font-size: 50px;
   letter-spacing: 5px;
+  color: white;
 }
 /*各テキストの基本設定*/
 p {
@@ -307,7 +305,6 @@ p {
 }
 h3 {
   font-size: 30px;
-  padding: 10px 0;
 }
 h4 {
   font-size: 20px;
@@ -318,44 +315,50 @@ h4 {
 .container {
   width: 100%;
 }
+section {
+  padding: 40px 80px;
+}
 
-
+/*---------------------TOP,KYUJIN---------------------*/
 /*当店自慢の一品、求人情報*/
-.menus1, .kyujin-info1 {
+.reccomend1, .kyujin-info1 {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menus2, .kyujin-info2 {
+.reccomend2, .kyujin-info2 {
   display: -webkit-flex;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
-.menus-img, .kyujin-info-img {
-  width: 65%;
+.reccomend-img, .kyujin-info-img {
+  width: 50%;
 }
-.menus-msg, .kyujin-info-msg {
-  width: 35%;
+.reccomend-msg, .kyujin-info-msg {
+  width: 50%;
   margin: 0 auto;
-  order: 1px solid black;
+}
+.reccomend h3, .kyujin-info h3 ,.kyujin-guide h3 {
+  margin-bottom: 15px;
 }
 
 /*profile*/
 .profile p {
- letter-spacing: 5px;
+ letter-spacing: 3px;
+ margin-bottom: 20px;
 }
-.profile img {
-  width: 80%;
+.profile-img {
+  display: -webkit-flex;
+  display: flex;
+  width: 33%;
   height: auto;
 }
 
-
 /*募集要項*/
 .kyujin-guide {
-  margin: 40px auto;
   line-height: 2.5em;
 }
 .kyujin-guide-info {
@@ -367,12 +370,10 @@ h4 {
 .kyujin-guide dt {
   font-size: 20px;
 }
-.kyujin-guide dd {
-}
 .kyujin-guide-left, .kyujin-guide-right {
   width: 48%;
   height: auto;
-  padding: 10px 5px;
+  padding: 15px 5px;
   background-color: rgba(255,152,114,0.4);
   border: 1px solid black;
 }
@@ -433,7 +434,75 @@ h4 {
   opacity: 0.7;
 }
 
+/*---------------------MENU---------------------*/
+/*Pickup Menu*/
+.heading-menu {
+  margin-bottom: 15px;
+  border-bottom: #663300 1px solid;
+  color: #663300;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+}
+.menu-pickup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+.menu-pickup li {
+  border: 1px solid #d8c7a0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.col {
+  width: 32%;
+}
+.col p {
+  margin: 15px;
+}
 
+/*お品書き*/
+.menu-food, .menu-drink {
+  ackground-image: url(/Users/y.sakota/Desktop/ポートフォリオ/img/3874862_l.jpg);
+}
+.menu-food p, .menu-drink p {
+  margin-bottom: -40px;
+}
+.menu-list {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-left, .menu-center, .menu-right {
+  width:30%;
+  height: auto;
+  padding: 0 10px;
+}
+.menu-list h3 {
+  background-color: white;
+  margin-top: 60px;
+}
+.menu-list dl {
+  border-bottom: 1px dotted black;
+  line-height: 2.5em;
+  padding: 10px 0;
+}
+.menu-list dt {
+  float: left;
+  display: block;
+}
+.menu-list dd {
+  display: block;
+  text-align: right;
+  color: red;
+}
+
+/*---------------------TENPO---------------------*/
 /*店舗案内*/
 .tenpo-info {
   margin: 0 auto;
@@ -441,18 +510,15 @@ h4 {
 .tenpo-info-list {
   line-height: 1.2em;
 }
-
 .tenpo-top {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  font-size: 15px;
 }
-.tenpo-top section {
+.tenpo-top div {
   width: 33%;
-}
-.tenpo-top .tenpo-info-list {
-  font-size: 13px;
 }
 
 .tenpo-center {
@@ -460,33 +526,43 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 17px;
 }
-.tenpo-center section {
+.tenpo-center div {
   width: 49%;
 }
 
-.tenpo-bottom {
+.tenpo-bottom-flex {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
+  font-size: 19px;
 }
-.bottom-left {
+.tenpo-bottom h3 {
+  font-size: 40px;
+  letter-spacing: 0.5em;
+}
+.tenpo-bottom-left {
   width: 60%;
 }
-.bottom-right {
+.tenpo-bottom-right {
   width: 40%;
+}
+.tenpo-bottom-right .tenpo-info-list {
+  line-height: 1.5;
 }
 .tenpo-info img {
   background-color: white;
 }
 
-/* スマートフォン向けレイアウト */
+/*---------------------スマートフォン向けレイアウト---------------------*/
 @media(max-width: 835px) {
-  .menus1, .menus2, .kyujin-info1, .kyujin-info2, .kyujin-guide-info,
-  .profile, .tenpo-top, .tenpo-center, .tenpo-bottom, .footer-main {
+  .reccomend1, .reccomend2, .profile-img,
+  .menu-pickup, .menu-list,
+  .kyujin-info1, .kyujin-info2, .kyujin-guide-info,
+  .tenpo-top, .tenpo-center, .tenpo-bottom-flex,
+  .footer-main {
           display:-webkit-flex;
           display: flex;
           flex-direction: column;
@@ -496,33 +572,79 @@ h4 {
           width: 100%;
           margin: 0 auto;
           }
-  .menus-img, .menus-msg, .kyujin-info-img,
-  .kyujin-info-msg, .kyujin-guide-left, .kyujin-guide-right,
-  .profile, .tenpo-top section, .tenpo-center section, .bottom-left, .bottom-right {
+  .reccomend-img, .reccomend-msg, .profile-img,
+  .col,
+  .kyujin-info-img,.kyujin-info-msg, .kyujin-guide-left, .kyujin-guide-right,
+  .tenpo-top div, .tenpo-center div,
+  .tenpo-bottom-left, .tenpo-bottom-right {
     width: 90%;
+  }
+  .heading {
+    margin: 0 10px 20px 10px;
   }
 
   /*TOP*/
-  .profile p {
-    letter-spacing: normal;
+  .reccomend-img {
+    margin-bottom: 10px;
   }
-  .menus-msg br, .profile-msg br {
+  .reccomend-msg br, .profile-msg br {
     display: none;
   }
+  .reccomend1 {
+    margin-bottom: 20px;
+  }
+  .profile p {
+    letter-spacing: normal;
+    margin-bottom: 20px;
+  }
+  .profile-img > img + img {
+    margin-top: 20px;
+  }
 
-  /*kyujin*/
+  /*MENU*/
+  .menu-left, .menu-center, .menu-right {
+    width: 70%;
+  }
+  .menu-pickup p {
+    font-size: 25px;
+  }
+
+  /*KYUJIN*/
+  .kyujin-info1 {
+    margin-bottom: 20px;
+  }
+  .kyujin-info-img {
+    margin-bottom: 10px;
+  }
   .kyujin-info-msg br {
     display: none;
   }
+  .kyujin-guide-left {
+    margin-bottom: 10px;
+  }
+  .entryTable {
+    width: 90%;
+  }
 
-  /*tenpo*/
-  .tenpo-info-list, .tenpo-top .tenpo-info-list {
+  /*TENPO*/
+  .tenpo-info-list, .tenpo-bottom .tenpo-info-list {
     font-size: 17px;
+    line-height: normal;
+  }
+  .tenpo-bottom h3 {
+    font-size: 30px;
+    letter-spacing: normal;
+  }
+  .col2  + .col2 {
+    margin-top: 10px;
+  }
+  .tenpo-top + .tenpo-center {
+    margin-top: 10px;
+  }
+  .tenpo-center + .tenpo-bottom {
+    margin-top: 10px;
   }
 
-  .heading {
-    margin: 40px 20px;
-  }
   /*footer*/
   .footer-info-list dt {
     float: none;
@@ -534,5 +656,27 @@ h4 {
   .footer-info {
     line-height: normal;
     margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/*---------------------スマートフォン向けレイアウト---------------------*/
+@media(max-width: 555px) {
+  section {
+    padding: 20px 10px;
+  }
+  .reccomend-img, .reccomend-msg, .profile-img,
+  .col,
+  .kyujin-info-img,.kyujin-info-msg, .kyujin-guide-left, .kyujin-guide-right,
+  .tenpo-top div, .tenpo-center div,
+  .tenpo-bottom-left, .tenpo-bottom-right {
+    width: 98%;
+  }
+
+  .menu-left, .menu-center, .menu-right {
+    width: 90%;
+  }
+  .entryTable {
+    width: 100%;
   }
 }
