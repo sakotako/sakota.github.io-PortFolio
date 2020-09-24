@@ -643,6 +643,9 @@ section {
   }
 
   /*footer*/
+  .footer-title {
+    width: 100%;
+  }
   .footer-info-list dt {
     float: none;
     width: 100%;
